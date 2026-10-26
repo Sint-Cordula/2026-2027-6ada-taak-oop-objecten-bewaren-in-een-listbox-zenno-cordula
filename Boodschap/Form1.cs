@@ -18,7 +18,7 @@ namespace Boodschap
 
                 //object toevoegen aan de listbox
                 //opgelet: heel het object wordt op deze manier bewaard in de listbox!
-                lstProductenEnPrijs.Items.Add(objBoodschap);
+                lstBoodschappenLijst.Items.Add(objBoodschap);
 
                 //gebruiksvriendelijkheid: textboxen terug leegmaken
                 txtAantal.Clear();
@@ -28,11 +28,11 @@ namespace Boodschap
 
         private void btnVerwijder_Click(object sender, EventArgs e)
         {
-            Boodschap boodschap = (Boodschap)(lstProductenEnPrijs.SelectedItem);
+            Boodschap boodschap = (Boodschap)(lstBoodschappenLijst.SelectedItem);
 
             if (boodschap != null)
             {
-                lstProductenEnPrijs.Items.Remove(boodschap);
+                lstBoodschappenLijst.Items.Remove(boodschap);
             }
             lblProductenEnPrijs.Text = "";
         }
@@ -40,7 +40,7 @@ namespace Boodschap
         private void lstProductenEnPrijs_SelectedIndexChanged(object sender, EventArgs e)
         {
             //je haalt een object terug uit de listbox
-            Boodschap boodschap = (Boodschap)(lstProductenEnPrijs.SelectedItem);
+            Boodschap boodschap = (Boodschap)(lstBoodschappenLijst.SelectedItem);
 
             //controleren of de gebruiker een boodschap geselecteerd heeft
             if (boodschap != null)

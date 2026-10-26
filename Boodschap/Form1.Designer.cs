@@ -33,9 +33,13 @@
             lblProductNaam = new Label();
             txtAantal = new TextBox();
             txtProductNaam = new TextBox();
-            lstProductenEnPrijs = new ListBox();
+            lstBoodschappenLijst = new ListBox();
             btnVerwijder = new Button();
             lblProductenEnPrijs = new Label();
+            lblWinkel = new Label();
+            txtWinkel = new TextBox();
+            btnNieuweWinkel = new Button();
+            lstWinkel = new ListBox();
             SuspendLayout();
             // 
             // btnToevoegen
@@ -80,14 +84,14 @@
             txtProductNaam.Size = new Size(125, 27);
             txtProductNaam.TabIndex = 4;
             // 
-            // lstProductenEnPrijs
+            // lstBoodschappenLijst
             // 
-            lstProductenEnPrijs.FormattingEnabled = true;
-            lstProductenEnPrijs.Location = new Point(27, 103);
-            lstProductenEnPrijs.Name = "lstProductenEnPrijs";
-            lstProductenEnPrijs.Size = new Size(332, 184);
-            lstProductenEnPrijs.TabIndex = 5;
-            lstProductenEnPrijs.SelectedIndexChanged += lstProductenEnPrijs_SelectedIndexChanged;
+            lstBoodschappenLijst.FormattingEnabled = true;
+            lstBoodschappenLijst.Location = new Point(27, 103);
+            lstBoodschappenLijst.Name = "lstBoodschappenLijst";
+            lstBoodschappenLijst.Size = new Size(332, 184);
+            lstBoodschappenLijst.TabIndex = 5;
+            lstBoodschappenLijst.SelectedIndexChanged += lstProductenEnPrijs_SelectedIndexChanged;
             // 
             // btnVerwijder
             // 
@@ -107,14 +111,51 @@
             lblProductenEnPrijs.Size = new Size(0, 20);
             lblProductenEnPrijs.TabIndex = 7;
             // 
+            // lblWinkel
+            // 
+            lblWinkel.AutoSize = true;
+            lblWinkel.Location = new Point(385, 19);
+            lblWinkel.Name = "lblWinkel";
+            lblWinkel.Size = new Size(54, 20);
+            lblWinkel.TabIndex = 8;
+            lblWinkel.Text = "Winkel";
+            // 
+            // txtWinkel
+            // 
+            txtWinkel.Location = new Point(385, 60);
+            txtWinkel.Name = "txtWinkel";
+            txtWinkel.Size = new Size(125, 27);
+            txtWinkel.TabIndex = 9;
+            // 
+            // btnNieuweWinkel
+            // 
+            btnNieuweWinkel.Location = new Point(516, 59);
+            btnNieuweWinkel.Name = "btnNieuweWinkel";
+            btnNieuweWinkel.Size = new Size(138, 29);
+            btnNieuweWinkel.TabIndex = 10;
+            btnNieuweWinkel.Text = "Nieuwe winkel";
+            btnNieuweWinkel.UseVisualStyleBackColor = true;
+            // 
+            // lstWinkel
+            // 
+            lstWinkel.FormattingEnabled = true;
+            lstWinkel.Location = new Point(385, 103);
+            lstWinkel.Name = "lstWinkel";
+            lstWinkel.Size = new Size(269, 184);
+            lstWinkel.TabIndex = 11;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(975, 578);
+            Controls.Add(lstWinkel);
+            Controls.Add(btnNieuweWinkel);
+            Controls.Add(txtWinkel);
+            Controls.Add(lblWinkel);
             Controls.Add(lblProductenEnPrijs);
             Controls.Add(btnVerwijder);
-            Controls.Add(lstProductenEnPrijs);
+            Controls.Add(lstBoodschappenLijst);
             Controls.Add(txtProductNaam);
             Controls.Add(txtAantal);
             Controls.Add(lblProductNaam);
@@ -133,8 +174,12 @@
         private Label lblProductNaam;
         private TextBox txtAantal;
         private TextBox txtProductNaam;
-        private ListBox lstProductenEnPrijs;
+        private ListBox lstBoodschappenLijst;
         private Button btnVerwijder;
         private Label lblProductenEnPrijs;
+        private Label lblWinkel;
+        private TextBox txtWinkel;
+        private Button btnNieuweWinkel;
+        private ListBox lstWinkel;
     }
 }
