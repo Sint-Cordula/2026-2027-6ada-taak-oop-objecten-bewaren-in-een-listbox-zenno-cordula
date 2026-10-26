@@ -135,6 +135,7 @@
             btnNieuweWinkel.TabIndex = 10;
             btnNieuweWinkel.Text = "Nieuwe winkel";
             btnNieuweWinkel.UseVisualStyleBackColor = true;
+            btnNieuweWinkel.Click += btnNieuweWinkel_Click;
             // 
             // lstWinkel
             // 
@@ -143,6 +144,7 @@
             lstWinkel.Name = "lstWinkel";
             lstWinkel.Size = new Size(269, 184);
             lstWinkel.TabIndex = 11;
+            lstWinkel.SelectedIndexChanged += lstWinkel_SelectedIndexChanged;
             // 
             // Form1
             // 

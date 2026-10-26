@@ -48,5 +48,39 @@ namespace Boodschap
                 lblProductenEnPrijs.Text = $"Aantal: {boodschap.Aantal} {Environment.NewLine}Product: {boodschap.Productnaam}";
             }
         }
+
+        private void btnNieuweWinkel_Click(object sender, EventArgs e)
+        {
+            if (txtWinkel.Text != String.Empty)
+            {
+                //aanmaken nieuw object
+                Winkel objWinkel = new Winkel(txtWinkel.Text);
+
+                //toevoegen object aan listbox
+                lstWinkel.Items.Add(objWinkel);
+                txtWinkel.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Gelieve een winkelnaam op te geven.", "Foutmelding");
+            }
+        }
+
+        private void lstWinkel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Winkel objWinkel = (Winkel)lstWinkel.SelectedItem;
+
+            ToonBoodschappenInListbox(objWinkel);
+            
+        }
+
+        private void ToonBoodschappenInListbox(Winkel objWinkel)
+        {
+            lstBoodschappenLijst.Items.Clear();
+            foreach (Boodschap item in objWinkel.GetBoodschappenLijst())
+            {
+                lstBoodschappenLijst.Items.Add(item);
+            }
+        }
     }
 }

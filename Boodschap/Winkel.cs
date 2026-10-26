@@ -45,8 +45,27 @@ namespace Boodschap
             }
         }
 
+        //overload van de methode VerwijderBoodschap(parameters verschillen)
+        public void VerwijderBoodschap(Boodschap objBoodschap)
+        {
+            boodschappenLijst.Remove(objBoodschap);
+        }
+
+        public override string ToString()
+        {
+            return WinkelNaam;
+        }
+
+        public Winkel(string strNaam)
+        {
+            WinkelNaam = strNaam;
+        }
+
+        public Winkel()
+        {
 
 
+        }
 
 
     }
