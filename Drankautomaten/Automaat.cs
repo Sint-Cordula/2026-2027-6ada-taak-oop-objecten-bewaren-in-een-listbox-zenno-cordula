@@ -14,7 +14,14 @@ namespace Drankautomaten
         //constructors
         public Automaat()
         {
-
+            AantalCola = 0;
+            AantalWater = 0;
+        }
+        public Automaat(string AutomaatNaam)
+        {
+            AantalCola = 0;
+            AantalWater = 0;
+            Naam = AutomaatNaam;
         }
         public Automaat(int aantalCola, int aantalWater, string AutomaatNaam)
         {
@@ -22,12 +29,13 @@ namespace Drankautomaten
             AantalWater = aantalWater;
             Naam = AutomaatNaam;
         }
-        public Automaat(string AutomaatNaam)
-        {
-            Naam = AutomaatNaam;
-        }
 
         //methodes
+        public override string ToString()
+        {
+            return Naam;
+        }
+
         public string BijvullenCola(int aantalCola)
         {
             if (AantalCola + aantalCola !> 50)
@@ -83,10 +91,7 @@ namespace Drankautomaten
             return $"Het aantal Cola dat je nog hebt in deze automaat is {AantalCola} en het aantal water is {AantalWater}.";
         }
 
-        public override string ToString()
-        {
-            return Naam;
-        }
+        
 
 
 
