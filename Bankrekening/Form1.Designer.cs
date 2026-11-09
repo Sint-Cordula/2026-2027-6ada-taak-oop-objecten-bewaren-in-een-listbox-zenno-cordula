@@ -39,6 +39,7 @@
             txtBedrag = new TextBox();
             btnStorting = new Button();
             btnOpname = new Button();
+            lstRekeningen = new ListBox();
             SuspendLayout();
             // 
             // lblVoornaamEnFamilienaam
@@ -137,11 +138,20 @@
             btnOpname.UseVisualStyleBackColor = true;
             btnOpname.Click += btnOpname_Click;
             // 
+            // lstRekeningen
+            // 
+            lstRekeningen.FormattingEnabled = true;
+            lstRekeningen.Location = new Point(261, 103);
+            lstRekeningen.Name = "lstRekeningen";
+            lstRekeningen.Size = new Size(177, 124);
+            lstRekeningen.TabIndex = 11;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lstRekeningen);
             Controls.Add(btnOpname);
             Controls.Add(btnStorting);
             Controls.Add(txtBedrag);
@@ -172,5 +182,6 @@
         private TextBox txtBedrag;
         private Button btnStorting;
         private Button btnOpname;
+        private ListBox lstRekeningen;
     }
 }

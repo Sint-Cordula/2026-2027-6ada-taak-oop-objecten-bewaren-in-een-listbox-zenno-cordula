@@ -6,13 +6,26 @@ namespace Bankrekening
 {
     internal class Bankrekening
     {
-        public double Saldo { get; private set; }
-        public string VolledigeNaam { get; }
+        private double saldo;
+        private string volledigeNaam;
 
+        public double Saldo
+        {
+            get { return saldo; }
+        }
+        public string VolledigeNaam
+        {
+            get { return volledigeNaam; }
+        }
+
+        public Bankrekening()
+        {
+
+        }
         public Bankrekening(string VN, string FN)
         {
-            VolledigeNaam = $"{VN} {FN}";
-            Saldo = 0;
+            volledigeNaam = $"{VN} {FN}";
+            saldo = 0;
         }
 
         public override string ToString()
@@ -24,9 +37,9 @@ namespace Bankrekening
         {
             if (bedrag > 0)
             {
-                Saldo += bedrag;
+                saldo += bedrag;
             }
-            return Saldo;
+            return saldo;
 
         }
 
@@ -34,9 +47,9 @@ namespace Bankrekening
         {
             if (bedrag > 0 && bedrag <= Saldo)
             {
-                Saldo -= bedrag;
+                saldo -= bedrag;
             }
-            return Saldo;
+            return saldo;
         }
     }
 }

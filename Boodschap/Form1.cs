@@ -12,15 +12,15 @@ namespace Boodschap
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
             //bij het oproepen van de constructor de data meegeven
-            if (txtAantal.Text != "" || txtProductNaam.Text != "")
+            if (lstWinkel.SelectedItem != null)
             {
-                Boodschap objBoodschap = new Boodschap(txtProductNaam.Text, Convert.ToInt32(txtAantal.Text));
+                Winkel objWinkel = (Winkel)lstWinkel.SelectedItem;
 
-                //object toevoegen aan de listbox
-                //opgelet: heel het object wordt op deze manier bewaard in de listbox!
-                lstBoodschappenLijst.Items.Add(objBoodschap);
+                //object aanmaken van de klasse boodschap en toevoegen aan de list van een bepaalde winkel
+                objWinkel.VoegBoodschapToe(txtProductNaam.Text, Convert.ToInt32(txtAantal.Text));
 
-                //gebruiksvriendelijkheid: textboxen terug leegmaken
+                ToonBoodschappenInListbox(objWinkel);
+
                 txtAantal.Clear();
                 txtProductNaam.Clear();
             }

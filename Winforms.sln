@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bankrekening", "Bankrekenin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam Calculator", "Steam Calculator\Steam Calculator.csproj", "{90853194-1921-4421-8A91-0136DB399143}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drankautomaten", "Drankautomaten\Drankautomaten.csproj", "{9A168E3B-710B-47AF-8DBD-985C088462EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{90853194-1921-4421-8A91-0136DB399143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90853194-1921-4421-8A91-0136DB399143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90853194-1921-4421-8A91-0136DB399143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A168E3B-710B-47AF-8DBD-985C088462EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A168E3B-710B-47AF-8DBD-985C088462EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A168E3B-710B-47AF-8DBD-985C088462EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A168E3B-710B-47AF-8DBD-985C088462EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

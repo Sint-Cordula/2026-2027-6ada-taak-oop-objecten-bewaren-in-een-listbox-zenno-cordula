@@ -106,7 +106,7 @@
             // lblProductenEnPrijs
             // 
             lblProductenEnPrijs.AutoSize = true;
-            lblProductenEnPrijs.Location = new Point(370, 103);
+            lblProductenEnPrijs.Location = new Point(385, 296);
             lblProductenEnPrijs.Name = "lblProductenEnPrijs";
             lblProductenEnPrijs.Size = new Size(0, 20);
             lblProductenEnPrijs.TabIndex = 7;

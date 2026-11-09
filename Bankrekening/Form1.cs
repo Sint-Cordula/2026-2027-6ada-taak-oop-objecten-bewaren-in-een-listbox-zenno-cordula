@@ -62,5 +62,15 @@ namespace Bankrekening
                 txtBedrag.Clear();
             }
         }
+
+        private void ToonRekeningenInListbox()
+        {
+            lstRekeningen.Items.Clear();
+        }
+
+
+
+
+
     }
 }
