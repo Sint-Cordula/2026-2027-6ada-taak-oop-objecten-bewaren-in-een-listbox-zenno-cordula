@@ -84,6 +84,7 @@
             lstAutomaten.Name = "lstAutomaten";
             lstAutomaten.Size = new Size(388, 384);
             lstAutomaten.TabIndex = 3;
+            lstAutomaten.SelectedIndexChanged += lstAutomaten_SelectedIndexChanged;
             // 
             // lblSelectedAutomaat
             // 
@@ -179,6 +180,7 @@
             btnColaToevoegen.TabIndex = 14;
             btnColaToevoegen.Text = "Bijvullen";
             btnColaToevoegen.UseVisualStyleBackColor = true;
+            btnColaToevoegen.Click += btnColaToevoegen_Click;
             // 
             // btnWaterToevoegen
             // 
@@ -188,6 +190,7 @@
             btnWaterToevoegen.TabIndex = 15;
             btnWaterToevoegen.Text = "Bijvullen";
             btnWaterToevoegen.UseVisualStyleBackColor = true;
+            btnWaterToevoegen.Click += btnWaterToevoegen_Click;
             // 
             // lblKopen
             // 
@@ -224,6 +227,7 @@
             btnColaKopen.TabIndex = 19;
             btnColaKopen.Text = "Kopen";
             btnColaKopen.UseVisualStyleBackColor = true;
+            btnColaKopen.Click += btnColaKopen_Click;
             // 
             // btnWaterKopen
             // 
@@ -233,6 +237,7 @@
             btnWaterKopen.TabIndex = 20;
             btnWaterKopen.Text = "Kopen";
             btnWaterKopen.UseVisualStyleBackColor = true;
+            btnWaterKopen.Click += btnWaterKopen_Click;
             // 
             // Form1
             // 

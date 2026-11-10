@@ -6,11 +6,11 @@ namespace Drankautomaten
 {
     internal class Klant
     {
+        //field
+        private List<Automaat> Automaten = new List<Automaat>();
+
         //property
         public string NaamKlant { get; set; }
-
-        //field
-        private List<Automaat> Automaten;
 
         //constructor
         public Klant(string naam)
@@ -19,7 +19,20 @@ namespace Drankautomaten
         }
 
         //methodes
-        public List<Automaat> GetAutomaten
+        public override string ToString()
+        {
+            return NaamKlant;
+        }
 
+        public List<Automaat> GetAutomaten()
+        {
+            return Automaten;
+        }
+
+        public void VoegAutomaatToe(string naamAutomaat)
+        {
+            Automaat objAutomaat = new Automaat(naamAutomaat);
+            Automaten.Add(objAutomaat);
+        }
     }
 }
